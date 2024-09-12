@@ -1,0 +1,26 @@
+import React, {Component}, from 'react';
+
+import { Router, Stack , Scene } from 'react-native-router-flux';
+
+import Login from '../pages/Login';
+
+import Signup from '..pages/Signup';
+
+export default class Routes extend Component <{}> {
+
+  render(){
+
+    return(
+
+      <Router>
+
+      <stack key = "Root" hideNavBar<{true}>
+
+      <Scene key = "login" component = {Login} tittle = "login" initial = {true}/>
+
+      <Scene key = "signup" component = Signup tittle = "Registrasi"/>
+
+      </Stack></Router>
+    )
+  }
+}
